@@ -1,10 +1,11 @@
 import imp
 from typing import Optional
 from fastapi import FastAPI
-from router import blog
+from router import BlogGet,BlogPost
 
 app = FastAPI()
-app.include_router(blog.router)
+app.include_router(BlogGet.router)
+app.include_router(BlogPost.router)
 
 @app.get('/')
 def index():
