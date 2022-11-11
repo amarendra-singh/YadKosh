@@ -1,5 +1,4 @@
-import imp
-from typing import Optional
+
 from fastapi import FastAPI
 from router import BlogGet,BlogPost
 
@@ -10,3 +9,5 @@ app.include_router(BlogPost.router)
 @app.get('/')
 def index():
     return {"message":"Hello world"}
+
+
