@@ -1,0 +1,7 @@
+DataBase Check List
+- Database defination - database.py
+- Model defination    - models.py
+- Create database     - main.py
+- Schema defination   - schemas.py
+- ORM functionality   - db_user.py
+- API functionality   - user.py
