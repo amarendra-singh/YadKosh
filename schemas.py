@@ -17,6 +17,7 @@ class UserBase(BaseModel):
 class UserDisplay(BaseModel):
     username : str
     email : str
+    items: List[Article]= []
     class Config():
         orm_mode = True
 
