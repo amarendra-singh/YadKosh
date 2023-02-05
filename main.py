@@ -3,7 +3,7 @@ from fastapi import Request
 from fastapi.responses import JSONResponse, PlainTextResponse
 from fastapi.exceptions import HTTPException
 
-from router import BlogGet,BlogPost,user,articles
+from router import BlogGet,BlogPost,user,articles,product
 from db import models
 from db.database import engine 
 from exceptions import StoryException
@@ -14,6 +14,7 @@ app.include_router(user.router)
 app.include_router(articles.router)
 app.include_router(BlogGet.router)
 app.include_router(BlogPost.router)
+app.include_router(product.router)
 
 
 @app.get('/')
