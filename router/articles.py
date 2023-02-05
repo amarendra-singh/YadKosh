@@ -9,7 +9,7 @@ from db.database import get_db
 
 router = APIRouter(
     prefix = '/article',
-    taggs=['article']
+    tags=['article']
 )
 
 @router.post('/', response_model = ArticeDisplay)

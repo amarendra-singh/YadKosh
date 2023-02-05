@@ -1,5 +1,6 @@
 from sqlalchemy.sql.sqltypes import Integer, String
-from sqlalchemy.sql.sqltypes import ForeignKey
+from sqlalchemy.sql.schema import ForeignKey
+from sqlalchemy.orm import relationship
 from db.database import Base
 from sqlalchemy import Column
 
