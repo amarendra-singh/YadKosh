@@ -1,7 +1,7 @@
 from .database import Base
 from sqlalchemy import Column, Integer, String
 
-class DBUser(Base):
+class DbUser(Base):
     __tablename__ = 'user'
     id = Column(Integer, primary_key=True, index= True)
     first_name = Column(String)
